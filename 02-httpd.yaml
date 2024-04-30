@@ -3,7 +3,7 @@
   become: yes
   tasks:  
     - name: installing web server apache
-      ansible.builtin.dnf:
+      ansible.builtin.package:
         name: httpd
         state: installed
     - name: start httpd server 
