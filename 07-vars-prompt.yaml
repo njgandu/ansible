@@ -10,4 +10,4 @@
   tasks:
     - name: using prompt variables
       ansible.builtin.debug:
-      msg: "username is {{USERNAME}} && password is {{PASSWD}}"
+       msg: "username is {{USERNAME}} && password is {{PASSWD}}"
