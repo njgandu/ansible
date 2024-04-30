@@ -1,0 +1,15 @@
+- name: variables declaration
+  hosts: web 
+  vars:
+    course: "devops"
+    name: "jyothi"
+    duration: 120 hrs
+  tasks: 
+    - name: varibales usage
+      vars:
+        course: "terraform" 
+      ansible.builtin.debug:
+        msg: "my course is {{course}}, name is {{name}}, duration {{duration}}"
+    - name: second tasks
+      ansible.builtin.debug:
+        msg: "my course is {{course}}, name is {{name}}, duration {{duration}}"
