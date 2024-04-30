@@ -1,6 +1,6 @@
 - name: installing apache
   hosts: web
-  become: yes
+  become: yes 
   tasks:  
     - name: installing web server apache
       ansible.builtin.package:
