@@ -4,12 +4,12 @@
   tasks: 
   - name: using conditionals 
     ansible.builtin.command: id jyothi1
-    register: USER-CHECK
+    register: USER_CHECK
     ignore_errors: true
 
   - name: print user-check information 
     ansible.builtin.debug:
-     msg: "info is {{USER-CHECK}}"
+     msg: "info is {{USER_CHECK}}"
 
   - #name: creating user 
     #ansible.builtin.command: useradd jyothi1 
