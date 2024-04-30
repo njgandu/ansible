@@ -1,10 +1,22 @@
 - name: conditional statements 
   hosts: web 
+  become: yes
   tasks: 
   - name: using conditionals 
     ansible.builtin.command: id jyothi1
+    register: USER-CHECK
     ignore_errors: true
+
+  - name: print user-check information 
+    ansible.builtin.debug:
+     msg: "info is {{USER-CHECK}}"
+
+  - #name: creating user 
+    #ansible.builtin.command: useradd jyothi1 
+    #when: 
      
   - name: printing message 
     ansible.builtin.debug:
       msg: "hello there!!"
+  
+  
