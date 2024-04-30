@@ -3,8 +3,8 @@
   tasks: 
   - name: using conditionals 
     ansible.builtin.command: id jyothi1
+    ignore_errors: true
      
   - name: printing message 
     ansible.builtin.debug:
       msg: "hello there!!"
-         
