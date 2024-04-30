@@ -1,0 +1,10 @@
+- name: conditional statements 
+  hosts: web 
+  tasks: 
+  - name: using conditionals 
+    ansible.builtin.command: id jyothi1
+     
+  - name: printing message 
+    ansible.builtin.debug:
+      msg: "hello there!!"
+         
