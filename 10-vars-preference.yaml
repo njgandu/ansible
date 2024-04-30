@@ -10,7 +10,7 @@
     private: no
   tasks: 
   - name: varibales prefernce finding
-    vars:
-     PLACE: "task area"
+    #vars:
+     #PLACE: "task area"
     ansible.builtin.debug: 
      msg: "varible is {{PLACE}}"    
