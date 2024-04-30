@@ -11,9 +11,9 @@
     ansible.builtin.debug:
      msg: "info is {{USER_CHECK}}"
 
-  - #name: creating user 
-    #ansible.builtin.command: useradd jyothi1 
-    #when: 
+  - name: creating user 
+    ansible.builtin.command: useradd jyothi1 
+    when: USER_CHECK != 0 
      
   - name: printing message 
     ansible.builtin.debug:
