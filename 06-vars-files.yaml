@@ -1,9 +1,8 @@
 - name: varibales from FILE
   hosts: web
   vars:
-   vars.yaml
+  - vars.yaml
   tasks:
    - name: using variables from vars.yaml
      ansible.builtin.debug:
       msg: "my course is {{course}}, name is {{name}}, duration {{duration}}"
-      
