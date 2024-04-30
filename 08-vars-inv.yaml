@@ -3,7 +3,6 @@
   tasks:
    - name: using inv variables
      vars:
-      time: 07:15 AM IST 
+       time: "07:15 AM IST" 
      ansible.builtin.debug: 
-      msg: "hello name is {{name}},cousre is {{course}},age is {{age}},timings are {{time}}"
-      
+       msg: "hello name is {{name}},cousre is {{course}},age is {{age}},timings are {{time}}"
