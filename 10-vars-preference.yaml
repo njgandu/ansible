@@ -2,8 +2,8 @@
   hosts: web
   vars:
    PLACE: from play area
-  vars_files:
-  - vars.yaml 
+  #vars_files:
+  #- vars.yaml 
   vars_prompt:
   - name: PLACE 
     prompt: enter the name of place of your variables
