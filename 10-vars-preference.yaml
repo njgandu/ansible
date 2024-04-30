@@ -1,0 +1,16 @@
+- name: varibale preferfence 
+  hosts: web
+  vars:
+   PLACE: from play area
+  vars_files:
+  - vars.yaml 
+  vars_prompt:
+  - name: PLACE 
+    prompt: enter the name of place of your variables
+    private: no
+  tasks: 
+  - name: varibales prefernce finding
+    vars:
+     PLACE: "task area"
+    ansible.builtin.debug: 
+     msg: "varible is {{PLACE}}"    
